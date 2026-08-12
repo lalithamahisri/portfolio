@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --background: #090706;
+  /* Rich warm-charcoal near-black */
+  --foreground: #fafaf9;
+  /* Warm stone off-white */
+  --accent-rgb: 217, 119, 6;
+  /* Amber-600 */
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-accent: rgb(217, 119, 6);
+  --color-accent-light: rgb(245, 158, 11);
+  --color-accent-dark: rgb(180, 83, 9);
+  --color-accent-dim: rgba(217, 119, 6, 0.06);
+  --color-accent-glow: rgba(217, 119, 6, 0.12);
+
+  --color-stone-925: #110e0c;
+  --color-stone-950: #090706;
+  --color-stone-900: #181512;
+  --color-stone-850: #221f1c;
+  --color-stone-800: #2d2925;
+  --color-stone-700: #423d38;
+  --color-stone-400: #a39e99;
+  --color-stone-500: #736e68;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Recruiter Selection styling */
+::selection {
+  background-color: rgba(217, 119, 6, 0.25);
+  color: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090706;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #221f1c;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #423d38;
+}
+
+/* Cyber Grid Background with Radial Mask to fade out at corners */
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(217, 119, 6, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(217, 119, 6, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 80%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 80%);
+}
+
+/* Radial Glow for Ambient Lighting */
+.radial-glow {
+  background: radial-gradient(circle 600px at var(--x, 50%) var(--y, 50%),
+      rgba(217, 119, 6, 0.05),
+      transparent 80%);
+}
+
+/* Custom Text Gradient */
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 40%, #dcd7d0 70%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-accent {
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 50%, #92400e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle border and background shadows for modern UI cards */
+.glow-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(217, 119, 6, 0.06);
+  background: rgba(17, 14, 12, 0.45);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.glow-card:hover {
+  border-color: rgba(217, 119, 6, 0.25);
+  box-shadow: 0 0 25px rgba(217, 119, 6, 0.06), inset 0 0 12px rgba(217, 119, 6, 0.02);
+  transform: translateY(-3px);
+}

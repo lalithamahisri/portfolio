@@ -58,11 +58,11 @@ export const aboutInfo = {
   focusAreas: [
     {
       title: "Software Development",
-      description: "Writing clean, maintainable, and efficient code.Writing clean, maintainable code and applying programming fundamentals to build practical software."
+      description: "Writing clean, maintainable code and applying programming fundamentals to build practical software."
     },
     {
       title: "Web Development",
-      description: "Building responsive web applications using React, Next.js, and Tailwind CSS, with backend APIs using Node.js and Express."
+      description: "Building responsive, modern, and highly interactive user interfaces using Next.js, React, and Tailwind CSS, backed by robust Node.js/Express APIs."
     },
     {
       title: "DSA & Problem Solving",
@@ -96,7 +96,7 @@ export const projects: Project[] = [
   {
     id: "mindcare",
     title: "MindCare",
-    description: "A mental wellness web application designed to provide students with tools and resources to support their everyday mental well-being",
+    description: "A mental wellness tracking application that provides mood tracking, daily journaling, and mindfulness exercises for student mental wellness.",
     techStack: ["React", "Node.js", "Express", "MongoDB"],
     githubUrl: "https://github.com/lalithamahisri/mind_care",
     liveUrl: "https://mind-care-blue-omega.vercel.app/"

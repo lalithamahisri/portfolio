@@ -24,7 +24,7 @@ export default function Projects() {
                 <div className="p-2.5 rounded bg-stone-950 border border-stone-900 text-stone-400 group-hover:text-accent group-hover:border-accent/30 transition-all duration-300">
                   <FolderGit2 className="h-5 w-5" />
                 </div>
-                
+
                 <div className="flex items-center gap-2">
                   <a
                     href={project.githubUrl}

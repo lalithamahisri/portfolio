@@ -114,7 +114,8 @@ export const projects: Project[] = [
     title: "FoodHub",
     description: "A full-stack food ordering web application featuring a responsive frontend, interactive menu, cart functionality, backend APIs, and MongoDB database integration.",
     techStack: ["HTML/CSS", "JavaScript", "React", "MongoDB", "Node.js", "Express"],
-    githubUrl: "https://github.com/lalithamahisri/food-hub"
+    githubUrl: "https://github.com/lalithamahisri/food-hub",
+    liveUrl: "https://food-hub-app-ochre.vercel.app"
   },
   {
     id: "temperature-converter",
